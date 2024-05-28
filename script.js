@@ -28,7 +28,7 @@ buttonObtener.addEventListener("click", async() => {
 
 const obterPokemon = async () => {
     let nombrePokemon = "pikachu"
-    const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+    const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombrePokemon}`)
     //const respuesta = await fetch(https://pokeapi.co/api/v2/pokemon/pikachu")
     const data = await respuesta.json()
     console.log(data)
